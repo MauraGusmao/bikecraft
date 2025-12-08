@@ -13,10 +13,10 @@ img {
     display: block;
 }
 
-.header{
+.header {
     display: grid;
     justify-content: center;
-    gap:20px;
+    gap: 20px;
 }
 
 a {
@@ -48,8 +48,7 @@ p {
     border: 2px solid #ffff;
 }
 .menu a:hover {
-    border-color:#e21;
-    
+    border-color: #e21;
 }
 ul {
     list-style: none;
@@ -62,7 +61,7 @@ ul {
     grid-template-columns: repeat(2, 1fr);
     max-width: 1000px;
 }
-.introducao h1{
+.introducao h1 {
     font-size: 2rem;
 }
 .introducao {
@@ -76,9 +75,9 @@ ul {
     justify-items: end;
 }
 
-.introducao-cover img{
+.introducao-cover img {
     object-fit: cover;
-   height: 100%;
+    height: 100%;
 }
 
 .botao {
@@ -124,7 +123,7 @@ ul {
     border-left: 4px solid transparent;
 }
 
-.vantagens-item:hover{
+.vantagens-item:hover {
     border-color: #e21;
 }
 
@@ -144,36 +143,45 @@ ul {
     box-sizing: border-box;
 }
 
-@media (max-width:1000px){
+@media (max-width: 1000px) {
     .conteudo-vantagem {
         grid-template-columns: 1fr;
     }
-    .subtitulo{
+    .subtitulo {
         text-align: center;
     }
 }
 
-@media(max-width:600px){
-    .conteudo{
+@media (max-width: 600px) {
+    body {
+        gap: 30px;
+        margin-top: 20px;
+    }
+    .header {
+        gap: 30px;
+    }
+    .conteudo {
         grid-template-columns: 1fr;
     }
-    .introdução::before{
-        display: none;
-    }
-    .introdução{
+   
+    .introducao {
         text-align: left;
         justify-items: start;
     }
-    .subtitulo{
-        font-size:3rem;
+    
+    .introducao{
+        display: none;
+    }
+    .subtitulo {
+        font-size: 3rem;
     }
 }
 
-@media(max-width:400px){
-    .subtitulo{
+@media (max-width: 400px) {
+    .subtitulo {
         font-size: 2rem;
     }
-    p{
+    p {
         font-size: 1rem;
     }
 }
